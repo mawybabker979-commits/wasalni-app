@@ -1,12 +1,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #2c3e50;
+    background-color: #0f172a; /* خلفية عامة بلون أزرق داكن فخم */
+    color: #e2e8f0; /* لون نص مريح وفاتح للقراءة */
     direction: rtl;
     text-align: right;
     margin: 0;
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -14,46 +14,68 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff;
-    padding: 15px 20px;
+    background: #1e293b; /* ترويسة بلون أزرق غامض متناسق */
+    padding: 15px 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
 }
 
 header h2 a {
-    color: #2c3e50;
-    font-size: 20px;
+    color: #38bdf8; /* لون سماوي جذاب لاسم التطبيق */
+    text-decoration: none;
+    font-size: 22px;
 }
 
 nav a {
-    color: #2980b9;
+    color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 10px;
+    margin: 0 5px;
+    font-size: 14px;
 }
 
 nav a:hover {
-    color: #1abc9c;
+    color: #7dd3fc;
     text-decoration: underline;
 }
 
 main {
-    background: #ffffff;
-    padding: 25px;
+    background: #1e293b; /* صندوق المحتوى الرئيسي بلون أزرق غامض */
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
+    border: 1px solid #334155;
 }
 
 h3 {
-    color: #34495e;
-    font-size: 18px;
-    margin-bottom: 20px;
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #f1f5f9;
+    margin-top: 20px;
+}
+
+p, ul {
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+ul {
+    padding-right: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
 }
 
 label {
     font-weight: bold;
-    color: #34495e;
+    color: #94a3b8;
     font-size: 14px;
 }
 
@@ -61,21 +83,22 @@ input, textarea {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #475569;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    background-color: #fafafa;
+    background-color: #0f172a; /* حقول الإدخال بلون داكن متناسق */
+    color: #f8fafc;
 }
 
-input:focus {
-    border-color: #1abc9c;
+input:focus, textarea:focus {
+    border-color: #38bdf8;
     outline: none;
-    background-color: #fff;
+    background-color: #1e293b;
 }
 
 button {
-    background-color: #1abc9c;
+    background-color: #0284c7; /* زر باللون الأزرق الغامض والبارز */
     color: white;
     padding: 12px 20px;
     border: none;
@@ -88,19 +111,41 @@ button {
 }
 
 button:hover {
-    background-color: #16a085;
+    background-color: #0369a1; /* درجة أغمق عند تمرير الماوس */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: right;
+    border: 1px solid #334155;
+}
+
+table th {
+    background-color: #0f172a;
+    color: #38bdf8;
+}
+
+table td {
+    color: #cbd5e1;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background: #e0e0e0;
+    background: #334155;
     margin: 25px 0;
 }
 
 footer {
     text-align: center;
-    color: #7f8c8d;
+    color: #64748b;
     font-size: 13px;
     margin-top: 20px;
 }
