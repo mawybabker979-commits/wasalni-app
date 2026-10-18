@@ -2,27 +2,69 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تطبيق وصلني - الخريطة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق وصلني - الخريطة والرحلات</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>خريطة التوصيل 🗺️</h1>
-        
-        <label>بحث عن الوجهة:</label>
-        <input type="text" placeholder="إلى أين تريد الذهاب اليوم؟">
-        
-        <h3>خيارات المركبة المتاحة:</h3>
-        <p>🚗 <strong>وصلني اقتصادية</strong> - التكلفة: 25 ر.س</p>
-        <button onclick="alert('جاري البحث عن أقرب سائق إليك...')">اطلب الرحلة الآن</button>
 
-        <hr>
-        <div class="nav-links">
-            <a href="index.html">الدخول</a> | 
+    <header>
+        <h2><a href="index.html" style="text-decoration: none; color: inherit;">تطبيق وصلني 🚗</a></h2>
+        <nav>
             <a href="map.html">الخريطة</a> | 
             <a href="about.html">عن الموقع</a> | 
-            <a href="contact.html">تواصل معنا</a>
-        </div>
-    </div>
+            <a href="contact.html">تواصل معنا</a> |
+            <a href="index.html">تسجيل خروج</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h3>خيارات الرحلات والمركبات المتاحة</h3>
+        <p>اختر نوع الرحلة المناسبة لتنقلاتك اليومية بكل راحة وأمان:</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; border-color: #bdc3c7; text-align: right;">
+            <thead>
+                <tr style="background-color: #f8f9fa;">
+                    <th>نوع الخدمة</th>
+                    <th>فئة المركبة</th>
+                    <th>المميزات</th>
+                    <th>التكلفة التقديرية</th>
+                    <th>الحالة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>وصلني اقتصادية</td>
+                    <td>سيارة عادية</td>
+                    <td>مكيفة، مناسبة للتشاور اليومي</td>
+                    <td>25 ر.س</td>
+                    <td>متاح الآن</td>
+                </tr>
+                <tr>
+                    <td>وصلني عائلية</td>
+                    <td>دفع رباعي / واسعة</td>
+                    <td>تتسع لـ 6 أشخاص، مريحة جداً</td>
+                    <td>45 ر.س</td>
+                    <td>متاح الآن</td>
+                </tr>
+                <tr>
+                    <td>وصلني VIP</td>
+                    <td>سيارة فاخرة</td>
+                    <td>خدمة خاصة وسائق معتمد</td>
+                    <td>70 ر.س</td>
+                    <td>طلب مسبق</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
+    </footer>
+
 </body>
 </html>
