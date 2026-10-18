@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>تطبيق وصلني</h1>
-    <p>تسجيل الدخول للمتابعة</p>
+    <div class="container">
+        <h1>تطبيق وصلني 🚗</h1>
+        <p style="text-align: center;">مرحباً بك، يرجى تسجيل الدخول للمتابعة</p>
 
-    <form>
-        <label>رقم الهاتف:</label><br>
-        <input type="text"><br><br>
+        <form>
+            <label>رقم الهاتف:</label>
+            <input type="text" placeholder="أدخل رقم هاتفك">
 
-        <label>كلمة المرور:</label><br>
-        <input type="password"><br><br>
+            <label>كلمة المرور:</label>
+            <input type="password" placeholder="أدخل كلمة المرور">
 
-        <button type="button" onclick="window.location.href='map.html'">تسجيل الدخول</button>
-    </form>
+            <button type="button" onclick="window.location.href='map.html'">تسجيل الدخول</button>
+        </form>
 
-    <br>
-    <hr>
-    <p>التنقل بين الصفحات:</p>
-    <a href="index.html">الدخول</a> | 
-    <a href="map.html">الخريطة</a> | 
-    <a href="about.html">عن الموقع</a> | 
-    <a href="contact.html">تواصل معنا</a>
+        <hr>
+        <div class="nav-links">
+            <a href="index.html">الدخول</a> | 
+            <a href="map.html">الخريطة</a> | 
+            <a href="about.html">عن الموقع</a> | 
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
 </body>
 </html>
