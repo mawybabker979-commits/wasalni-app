@@ -1,17 +1,28 @@
+/* تنسيقات عامة لموقع وصلني */
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7f6;
     color: #2c3e50;
     direction: rtl;
     text-align: right;
-    padding: 30px;
     margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
     color: #1abc9c;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 h3 {
@@ -24,15 +35,26 @@ p {
     color: #555;
 }
 
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
 input, textarea {
     width: 100%;
     padding: 12px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 15px;
     border: 1px solid #bdc3c7;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 14px;
+    background-color: #fafafa;
+}
+
+input:focus, textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
     background-color: #fff;
 }
 
@@ -45,8 +67,8 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -60,21 +82,20 @@ hr {
     margin: 25px 0;
 }
 
-a {
+.nav-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-links a {
     color: #2980b9;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 5px;
+    margin: 0 8px;
+    font-size: 14px;
 }
 
-a:hover {
+.nav-links a:hover {
+    color: #1abc9c;
     text-decoration: underline;
-}
-
-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    margin-top: 15px;
 }
