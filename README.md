@@ -1,2 +1,0 @@
-# wasalni-app
-wasalni-app
