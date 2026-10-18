@@ -2,34 +2,65 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تطبيق وصلني - تواصل معنا</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>تواصل معنا 📞</h1>
-        <p style="text-align: center;">نحن هنا لخدمتك والإجابة عن استفساراتك طوال اليوم.</p>
 
-        <form>
-            <label>اسمك الكريم:</label>
-            <input type="text" placeholder="أدخل اسمك">
-
-            <label>البريد الإلكتروني:</label>
-            <input type="email" placeholder="أدخل بريدك الإلكتروني">
-
-            <label>الرسالة:</label>
-            <textarea rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
-
-            <button type="button" onclick="alert('تم إرسال رسالتك بنجاح!')">إرسال الرسالة</button>
-        </form>
-
-        <hr>
-        <div class="nav-links">
-            <a href="index.html">الدخول</a> | 
+    <header>
+        <h2><a href="index.html" style="text-decoration: none; color: inherit;">تطبيق وصلني 🚗</a></h2>
+        <nav>
             <a href="map.html">الخريطة</a> | 
             <a href="about.html">عن الموقع</a> | 
-            <a href="contact.html">تواصل معنا</a>
-        </div>
-    </div>
+            <a href="contact.html">تواصل معنا</a> |
+            <a href="index.html">تسجيل خروج</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h3>تواصل معنا</h3>
+        <p>يسعدنا تواصلكم معنا على مدار الساعة لخدمتكم والإجابة عن أي استفسارات تخص رحلاتكم:</p>
+
+        <ul>
+            <li><strong>رقم الدعم الفني:</strong> 249912345678+</li>
+            <li><strong>رقم الواتساب:</strong> 249923456789+</li>
+            <li><strong>البريد الإلكتروني:</strong> support@wasalni-app.com</li>
+            <li><strong>العنوان:</strong> السودان - الخرطوم / ود مدني</li>
+        </ul>
+
+        <hr>
+
+        <h4>أو اترك لنا رسالتك وسنقوم بالرد عليك قريباً:</h4>
+        <form>
+            <div>
+                <label for="name">الاسم:</label><br>
+                <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكريم">
+            </div>
+            <br>
+            <div>
+                <label for="email">البريد الإلكتروني:</label><br>
+                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+            </div>
+            <br>
+            <div>
+                <label for="msg">الرسالة:</label><br>
+                <textarea id="msg" name="msg" rows="4" required placeholder="اكتب رسالتك أو استفسارك هنا..."></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">إرسال الرسالة</button>
+            </div>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
+    </footer>
+
 </body>
 </html>
