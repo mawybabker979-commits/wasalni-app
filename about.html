@@ -2,20 +2,34 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تطبيق وصلني - عن الموقع</title>
+    <title>تطبيق وصلني - تواصل معنا</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>عن تطبيق وصلني</h1>
-    <p>تطبيق وصلني هو منصتك الذكية لطلب سيارات التوصيل بكل سهولة وأمان.</p>
-    <p>نسعى لربطك بأقرب السائقين المعتمدين لتسهيل تنقلاتك اليومية بأسعار تنافسية.</p>
+    <div class="container">
+        <h1>تواصل معنا 📞</h1>
+        <p style="text-align: center;">نحن هنا لخدمتك والإجابة عن استفساراتك طوال اليوم.</p>
 
-    <br>
-    <hr>
-    <p>التنقل بين الصفحات:</p>
-    <a href="index.html">الدخول</a> | 
-    <a href="map.html">الخريطة</a> | 
-    <a href="about.html">عن الموقع</a> | 
-    <a href="contact.html">تواصل معنا</a>
+        <form>
+            <label>اسمك الكريم:</label>
+            <input type="text" placeholder="أدخل اسمك">
+
+            <label>البريد الإلكتروني:</label>
+            <input type="email" placeholder="أدخل بريدك الإلكتروني">
+
+            <label>الرسالة:</label>
+            <textarea rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+
+            <button type="button" onclick="alert('تم إرسال رسالتك بنجاح، شكراً لتواصلك معنا!')">إرسال الرسالة</button>
+        </form>
+
+        <hr>
+        <div class="nav-links">
+            <a href="index.html">الدخول</a> | 
+            <a href="map.html">الخريطة</a> | 
+            <a href="about.html">عن الموقع</a> | 
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
 </body>
 </html>
