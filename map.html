@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>خريطة وصلني</h1>
-    
-    <p>بحث عن الوجهة:</p>
-    <input type="text" placeholder="إلى أين تريد الذهاب؟">
-    
-    <h3>خيارات المركبة:</h3>
-    <p>🚗 وصلني اقتصادية - 25 ر.س</p>
-    <button onclick="alert('جاري طلب المركبة...')">اطلب الآن</button>
+    <div class="container">
+        <h1>خريطة التوصيل 🗺️</h1>
+        
+        <label>بحث عن الوجهة:</label>
+        <input type="text" placeholder="إلى أين تريد الذهاب اليوم؟">
+        
+        <h3>خيارات المركبة المتاحة:</h3>
+        <p>🚗 <strong>وصلني اقتصادية</strong> - التكلفة: 25 ر.س</p>
+        <button onclick="alert('جاري البحث عن أقرب سائق إليك...')">اطلب الرحلة الآن</button>
 
-    <br><br>
-    <hr>
-    <p>التنقل بين الصفحات:</p>
-    <a href="index.html">الدخول</a> | 
-    <a href="map.html">الخريطة</a> | 
-    <a href="about.html">عن الموقع</a> | 
-    <a href="contact.html">تواصل معنا</a>
+        <hr>
+        <div class="nav-links">
+            <a href="index.html">الدخول</a> | 
+            <a href="map.html">الخريطة</a> | 
+            <a href="about.html">عن الموقع</a> | 
+            <a href="contact.html">تواصل معنا</a>
+        </div>
+    </div>
 </body>
 </html>
